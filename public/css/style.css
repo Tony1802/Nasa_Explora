@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
 :root {
     --white: #fff;
   }
@@ -26,12 +28,16 @@ header {
     color: var(--white);
 }
 
+header h1{
+    font-family: "Courgette", cursive;
+}
+
 a {
     text-decoration: none;
 }
 
 .logo img {
-    width: 6rem;
+    width: 130px;
     height: auto;
     display: flex;
     justify-content: center;

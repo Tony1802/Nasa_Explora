@@ -67,19 +67,41 @@ const hideLoad = () => {
   load.style.display = "none";
 };
 
+// // Obtener información del JSON
+// const getData = async (url) => {
+//   try {
+//     loading();
+//     const response = await fetch(url);
+//     const data = await response.json();
+//     return data;
+//   } catch (error) {
+//     console.log(error);
+//   } finally {
+//     hideLoad();
+//   }
+// };
+
 // Obtener información del JSON
 const getData = async (url) => {
   try {
     loading();
     const response = await fetch(url);
+
+    if (response.status === 404) {
+      window.location.href = '../paginaError.html';
+      return null; // No retornar datos en caso de error 404
+    }
+
     const data = await response.json();
     return data;
   } catch (error) {
     console.log(error);
+    // Puedes manejar otros errores aquí si es necesario
   } finally {
     hideLoad();
   }
 };
+
 
 // Función para armado de videos Youtube
 const youtube = (json) => {
