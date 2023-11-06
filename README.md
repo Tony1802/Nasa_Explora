@@ -28,4 +28,9 @@ La NASA (Administración Nacional de Aeronáutica y del Espacio) es la agencia e
 
 Si tienes alguna pregunta, sugerencia o comentario, no dudes en ponerte en contacto con nosotros.
 
+
+## Participantes del proyecto
+
+Se ah decido incorporarse un nuevo integrante para el desarrollo del sitio.
+
 ¡Esperamos que disfrutes de tu visita a nuestra página web y que encuentres información fascinante sobre los fenómenos espaciales que suceden a nuestro alrededor!
